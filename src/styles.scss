@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Raleway', sans-serif;
+}
+main {
+  display: block;
+  margin-left: 70px;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+}
