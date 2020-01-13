@@ -1,0 +1,28 @@
+nav {
+  background: #009EFF;
+  color: white;
+  padding: 15px 0 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  text-align: center;
+
+  .nav__logo {
+    font-size: 30px;
+    padding-bottom: 50px;
+  }
+
+  .nav__list {
+
+    .nav__item {
+
+      padding: 10px 0;
+      .nav__link {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
