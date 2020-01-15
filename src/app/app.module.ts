@@ -10,6 +10,7 @@ import { HeroComponent } from './components/home/hero/hero.component';
 import { PortfolioComponent } from './components/home/portfolio/portfolio.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CertificatesComponent } from './components/home/certificates/certificates.component';
+import { PortfolioItemComponent } from './components/home/portfolio/portfolio-item/portfolio-item.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CertificatesComponent } from './components/home/certificates/certificat
     PortfolioComponent,
     FooterComponent,
     CertificatesComponent,
+    PortfolioItemComponent,
   ],
   imports: [
     BrowserModule,

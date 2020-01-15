@@ -39,9 +39,7 @@
         },
         "technologies": [
             "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
+            "TypeScript"
         ]
     },
     {
@@ -68,10 +66,7 @@
             "github": "https://github.com/tbone1020/Auto-Complete"
         },
         "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
+            "Angular 8"
         ]
     },
     {

@@ -1,3 +1,10 @@
 export interface IPortfolio {
-    portfolioItems: Object[]
+    name: string;
+    image_path: string;
+    description: string;
+    links: {
+        live_demo: string,
+        github: string,
+    };
+    technologies: string[];
 }

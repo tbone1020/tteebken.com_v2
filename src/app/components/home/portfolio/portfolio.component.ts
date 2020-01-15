@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../../../services/portfolio.service';
+import { PortfolioItem } from '../../../shared/models/portfolio-item.model';
 
 @Component({
   selector: 'app-portfolio',
@@ -8,7 +9,7 @@ import { PortfolioService } from '../../../services/portfolio.service';
 })
 export class PortfolioComponent implements OnInit {
 
-  private listOfPortfolioItems: Object[];
+  private listOfPortfolioItems: PortfolioItem[];
 
   constructor(private portfolioItems: PortfolioService) { }
 
@@ -16,8 +17,8 @@ export class PortfolioComponent implements OnInit {
     this.getPortfolioProjects();
   }
 
-  getPortfolioProjects(): void {
-    this.listOfPortfolioItems = this.portfolioItems.getProjects();
+  async getPortfolioProjects(): Promise<void> {
+    this.listOfPortfolioItems = await this.portfolioItems.getProjects();
     console.log(this.listOfPortfolioItems);
   }
 
