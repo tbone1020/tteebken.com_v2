@@ -1,0 +1,27 @@
+.certificates-wrap {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+
+    .certificate {
+        flex-basis: 28%;
+        margin: 0 8% 40px 0;
+
+        .certificate__link {
+            color: black;
+            text-decoration: none;
+
+            .certificate__image {
+                width: 100%;
+            }
+
+            .certificate__name {
+                padding-top: 15px;
+            }
+        }
+
+        &:nth-child(3n + 3) {
+            margin-right: 0;
+        }
+    }
+}

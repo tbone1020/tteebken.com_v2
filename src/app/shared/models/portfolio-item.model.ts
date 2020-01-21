@@ -8,5 +8,6 @@ export class PortfolioItem {
         public github: string, 
         public tachnologies: string[]) {
 
+            
     }
 }

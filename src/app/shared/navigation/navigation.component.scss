@@ -1,6 +1,7 @@
 nav {
-  background: #009EFF;
-  color: white;
+  // background: #009EFF;
+  color: black;
+  border-right: 1px solid black;
   padding: 15px 0 0;
   position: fixed;
   left: 0;
@@ -20,7 +21,7 @@ nav {
 
       padding: 10px 0;
       .nav__link {
-        color: white;
+        color: black;
         text-decoration: none;
       }
     }

@@ -11,6 +11,7 @@ import { PortfolioComponent } from './components/home/portfolio/portfolio.compon
 import { FooterComponent } from './shared/footer/footer.component';
 import { CertificatesComponent } from './components/home/certificates/certificates.component';
 import { PortfolioItemComponent } from './components/home/portfolio/portfolio-item/portfolio-item.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { PortfolioItemComponent } from './components/home/portfolio/portfolio-it
     FooterComponent,
     CertificatesComponent,
     PortfolioItemComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

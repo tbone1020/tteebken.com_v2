@@ -18,6 +18,7 @@ export class PortfolioService implements APortfolio {
       return response.map(item => new PortfolioItem(item.name, item.image_path, item.description, item.links.live_demo, item.links.github, item.technologies));
     } catch(error) {
       console.log("Error calling portfolio items.", error);
+      return [];
     }
   }
 }

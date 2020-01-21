@@ -1,0 +1,53 @@
+@-webkit-keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+#portfolio {
+  padding: 150px 0;
+
+  .portfolio__header {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .success {
+    padding: 50px 0;
+    text-align: center;
+  }
+}
+.load-icon {
+    width: 25px;
+    margin: auto;
+
+    img {
+        -webkit-animation: rotating 2s linear infinite;
+        animation: rotating 2s linear infinite;
+        width: 100%;
+    }
+}
+
+.github-error-link {
+  text-align: center;
+  font-size: 18px;
+  padding: 50px 0;
+  
+  a {
+    font-weight: bold;
+  }
+}
