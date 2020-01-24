@@ -1,41 +1,12 @@
 
-<section id="certricates">
+<section id="certificates">
   <div class="container">
+    <h1 class="certificates__header">Some certificates I have earned</h1>
     <section class="certificates-wrap">
-      <figure class="certificate">
-        <a class="certificate__link" href="#">
-          <img src="https://via.placeholder.com/250" alt="image of certificate" class="certificate__image">
-          <figcaption class="certificate__name">Certificate in responsive web design from FreeCodeCamp.org</figcaption>
-        </a>
-      </figure>
-      <figure class="certificate">
-        <a class="certificate__link" href="#">
-          <img src="https://via.placeholder.com/250" alt="image of certificate" class="certificate__image">
-          <figcaption class="certificate__name">Certificate in responsive web design from FreeCodeCamp.org</figcaption>
-        </a>
-      </figure>
-      <figure class="certificate">
-        <a class="certificate__link" href="#">
-          <img src="https://via.placeholder.com/250" alt="image of certificate" class="certificate__image">
-          <figcaption class="certificate__name">Certificate in responsive web design from FreeCodeCamp.org</figcaption>
-        </a>
-      </figure>
-      <figure class="certificate">
-        <a class="certificate__link" href="#">
-          <img src="https://via.placeholder.com/250" alt="image of certificate" class="certificate__image">
-          <figcaption class="certificate__name">Certificate in responsive web design from FreeCodeCamp.org</figcaption>
-        </a>
-      </figure>
-      <figure class="certificate">
-        <a class="certificate__link" href="#">
-          <img src="https://via.placeholder.com/250" alt="image of certificate" class="certificate__image">
-          <figcaption class="certificate__name">Certificate in responsive web design from FreeCodeCamp.org</figcaption>
-        </a>
-      </figure>
-      <figure class="certificate">
-        <a class="certificate__link" href="#">
-          <img src="https://via.placeholder.com/250" alt="image of certificate" class="certificate__image">
-          <figcaption class="certificate__name">Certificate in responsive web design from FreeCodeCamp.org</figcaption>
+      <figure class="certificate" *ngFor="let certificate of certificateList">
+        <a class="certificate__link" href={{certificate.url}}>
+          <img src={{certificate.image_path}} alt={{certificate.image_alt}} class="certificate__image">
+          <figcaption class="certificate__name">{{certificate.description}}</figcaption>
         </a>
       </figure>
     </section>

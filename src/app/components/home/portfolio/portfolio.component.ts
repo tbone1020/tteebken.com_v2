@@ -17,9 +17,9 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     let list = new PortfolioItem("name", "imagePath", "description", "liveDemo", "github", ["tachnologies:"]);
     setTimeout(() => {
-      // this.listOfPortfolioItems.push(list);
+      this.listOfPortfolioItems.push(list);
       this.isLoading = false;
-    }, 5000)
+    }, 3000)
     this.getPortfolioProjects();
   }
 

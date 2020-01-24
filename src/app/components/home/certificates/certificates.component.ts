@@ -7,6 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificatesComponent implements OnInit {
 
+  private certificateList: Object[] = [{
+    url: "#",
+    image_path: "https://via.placeholder.com/250",
+    image_alt: "image of certificate",
+    description: "Certificate in responsive web design from FreeCodeCamp.org",
+  }, {
+    url: "#",
+    image_path: "https://via.placeholder.com/250",
+    image_alt: "image of certificate",
+    description: "Certificate in responsive web design from FreeCodeCamp.org",
+  }, {
+    url: "#",
+    image_path: "https://via.placeholder.com/250",
+    image_alt: "image of certificate",
+    description: "Certificate in responsive web design from FreeCodeCamp.org",
+  }, {
+    url: "#",
+    image_path: "https://via.placeholder.com/250",
+    image_alt: "image of certificate",
+    description: "Certificate in responsive web design from FreeCodeCamp.org",
+  }];
+
   constructor() { }
 
   ngOnInit() {
