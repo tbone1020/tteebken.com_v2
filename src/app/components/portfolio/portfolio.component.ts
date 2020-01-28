@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from '../../../services/portfolio.service';
-import { PortfolioItem } from '../../../shared/models/portfolio-item.model';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { PortfolioService } from '../../services/portfolio.service';
+import { PortfolioItem } from '../../shared/models/portfolio-item.model';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,6 +11,7 @@ export class PortfolioComponent implements OnInit {
 
   private listOfPortfolioItems: PortfolioItem[] = [];
   private isLoading: boolean = true;
+  @ViewChild('portfolioElement', {static: false}) portfolioElement: HTMLElement;
 
   constructor(private portfolioItems: PortfolioService) { }
 

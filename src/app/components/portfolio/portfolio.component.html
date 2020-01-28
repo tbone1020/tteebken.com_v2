@@ -1,6 +1,6 @@
-<section id="portfolio">
+<section id="portfolio" #portfolioElement>
   <div class="container">
-    <h2 class="portfolio__header">Projects I have worked on</h2>
+    <h2>Projects I have worked on</h2>
     <div *ngIf="listOfPortfolioItems.length > 0 && isLoading === false">
       <!-- <app-portfolio-item ngFor="let item of listOfPortfolioItems"
       [name]="item.name"

@@ -1,7 +1,6 @@
-
-<section id="certificates">
+<section id="certificates" #certificatesElement>
   <div class="container">
-    <h1 class="certificates__header">Some certificates I have earned</h1>
+    <h2>Some certificates I have earned</h2>
     <section class="certificates-wrap">
       <figure class="certificate" *ngFor="let certificate of certificateList">
         <a class="certificate__link" href={{certificate.url}}>

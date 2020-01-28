@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-certificates',
@@ -28,6 +28,7 @@ export class CertificatesComponent implements OnInit {
     image_alt: "image of certificate",
     description: "Certificate in responsive web design from FreeCodeCamp.org",
   }];
+  @ViewChild('certificatesElement', {static: false}) certificatesElement: HTMLElement;
 
   constructor() { }
 

@@ -5,9 +5,14 @@ main {
   display: block;
   margin-left: 70px;
 }
-
 .container {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 50px;
 }

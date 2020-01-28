@@ -1,11 +1,12 @@
 footer {
-    text-align: center;
+    border-top: 1px solid black;
+    text-align: left;
     padding: 40px 0;
 
     .footer__header {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
-        text-align: center;
         line-height: 25px;
+        padding-bottom: 15px;
     }
 }

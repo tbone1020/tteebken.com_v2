@@ -1,0 +1,26 @@
+#portfolio {
+  padding: 150px 0 100px;
+
+  .success {
+    padding: 50px 0;
+    text-align: center;
+  }
+}
+.load-icon {
+    width: 25px;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.github-error-link {
+  text-align: center;
+  font-size: 18px;
+  padding: 50px 0;
+  
+  a {
+    font-weight: bold;
+  }
+}
