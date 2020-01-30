@@ -1,9 +1,23 @@
 #about {
-    padding: 150px 0;
+    border-bottom: 1px solid black;
+    padding: 100px 0 200px;
     text-align: left;
-
+    
     .about__description {
-        width: 50%;
-        display: inline-block;
+
+        .about__paragraph-wrapper {
+            
+            .about__paragraph {
+                width: 50%;
+                font-size: 18px;
+                line-height: 20px;  
+                display: inline-block;
+                text-align: left;
+            }
+            
+            &.about--align-right {
+                text-align: right;
+            }
+        }
     }
 }
