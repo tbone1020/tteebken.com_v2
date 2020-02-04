@@ -13,6 +13,8 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { PortfolioItemComponent } from './components/portfolio/portfolio-item/portfolio-item.component';
 import { AboutComponent } from './components/about/about.component';
 import { PortfolioService } from './services/portfolio.service';
+import { ContactComponent } from './components/contact/contact.component';
+import { TechItemPipe } from './shared/pipes/tech-item.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { PortfolioService } from './services/portfolio.service';
     CertificatesComponent,
     PortfolioItemComponent,
     AboutComponent,
+    ContactComponent,
+    TechItemPipe,
   ],
   imports: [
     BrowserModule,

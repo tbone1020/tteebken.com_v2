@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../../services/portfolio.service';
 import { PortfolioItem } from '../../shared/models/portfolio-item.model';
 
@@ -9,23 +9,23 @@ import { PortfolioItem } from '../../shared/models/portfolio-item.model';
 })
 export class PortfolioComponent implements OnInit {
 
-  private listOfPortfolioItems: PortfolioItem[] = [];
-  private isLoading: boolean = true;
-  @ViewChild('portfolioElement', {static: false}) portfolioElement: HTMLElement;
+  public listOfPortfolioItems: PortfolioItem[] = [];
+  public isLoading: boolean = true;
 
-  constructor(private portfolioItems: PortfolioService) { }
+  constructor(private portfolio: PortfolioService) { }
 
   ngOnInit() {
-    let list = new PortfolioItem("name", "imagePath", "description", "liveDemo", "github", ["tachnologies:"]);
-    setTimeout(() => {
-      this.listOfPortfolioItems.push(list);
-      this.isLoading = false;
-    }, 3000)
+    // let list = new PortfolioItem("name", "imagePath", "description", "liveDemo", "github", ["tachnologies:"]);
+    // setTimeout(() => {
+    //   this.listOfPortfolioItems.push(list);
+    //   this.isLoading = false;
+    // }, 3000)
     this.getPortfolioProjects();
   }
 
   async getPortfolioProjects(): Promise<void> {
-    // this.listOfPortfolioItems = await this.portfolioItems.getProjects();
+    this.listOfPortfolioItems = await this.portfolio.getProjects();
+    this.isLoading = false;
     
   }
 

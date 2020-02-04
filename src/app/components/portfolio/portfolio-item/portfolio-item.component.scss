@@ -1,0 +1,56 @@
+.portfolio-item {
+    margin-bottom: 50px;
+
+    .portfolio-item__image-wrap {
+        max-width: 275px;
+        max-height: 275px;
+        margin: auto;
+
+        .portfolio-item__image {
+            width: 100%;
+        }
+    }
+    .portfolio-item__project {
+        text-align: center;
+        
+        .portfolio-item__name {
+            font-size: 20px;
+            padding: 25px 0 15px;
+        }
+        .portfolio-item__description {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .portfolio__technologies {
+            padding: 10px 0;
+            font-size: 12px;
+            text-align: center;
+
+            strong {
+                display: inline-block;
+                margin: 0 0 4px;
+                background: black;
+                color: white;
+                padding: 5px;
+            }
+        }
+        .portfolio__project-links {
+            text-align: center;
+            padding: 15px 0 0;
+
+            .portfolio__link {
+                color: black;
+                display: inline-block;
+                vertical-align: top;
+                text-decoration: none;
+                width: 45%;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+
+        }
+    }
+}

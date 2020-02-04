@@ -1,1 +1,15 @@
-<p>portfolio-item works!</p>
+<figure class="portfolio-item">
+    <div class="portfolio-item__image-wrap">
+        <img src="{{imagePath}}" alt="portfolio item image" class="portfolio-item__image">
+    </div>
+    <figcaption class="portfolio-item__project">
+        <h3 class="portfolio-item__name">{{name}}</h3>
+        <p class="portfolio-item__description">{{description}}</p>
+        <div class="portfolio__technologies" [innerHTML]="technologies | techItem"> 
+        </div>
+        <div class="portfolio__project-links">
+            <a href="{{links.live_demo}}" target="_blank" class="portfolio__link">Live Demo</a>
+            <a href="{{links.github}}" target="_blank" class="portfolio__link">GitHub</a>
+        </div>
+    </figcaption>
+</figure>

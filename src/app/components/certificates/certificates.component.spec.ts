@@ -1,25 +1,30 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { CertificatesComponent } from './certificates.component';
 
 describe('CertificatesComponent', () => {
   let component: CertificatesComponent;
-  let fixture: ComponentFixture<CertificatesComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ CertificatesComponent ]
-    })
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(CertificatesComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+  
+  beforeEach (() => {
+    component = new CertificatesComponent();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it ('Should exist', () => {
+    expect(component).toBeDefined();
   });
+
+  describe ('Certificate list', () => {
+    it ('Should have certificate array list', () => {
+      expect(component.certificateList).toBeDefined();
+    });
+  
+    it ('Should be an array', () => {
+      expect(Array.isArray(component.certificateList)).toBe(true);
+    });
+  
+    it ('Should be a list of objects', () => {
+      expect(component.certificateList[0] instanceof Object).toBe(true);
+      expect(component.certificateList[0] === null).toBe(false);
+      expect(Array.isArray(component.certificateList[0])).toBe(false);
+    });
+  });
+
 });

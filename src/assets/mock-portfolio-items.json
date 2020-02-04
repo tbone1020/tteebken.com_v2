@@ -2,7 +2,7 @@
     {
         "name": "Auto Complete",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
             "github": "https://github.com/tbone1020/Auto-Complete"
@@ -17,7 +17,7 @@
     {
         "name": "Stripe Payment Website",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": null,
             "github": "https://github.com/tbone1020/Auto-Complete"
@@ -32,7 +32,7 @@
     {
         "name": "Portfolio Website",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": null,
             "github": null
@@ -45,7 +45,7 @@
     {
         "name": "Blackjack game",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
             "github": "https://github.com/tbone1020/Auto-Complete"
@@ -60,7 +60,7 @@
     {
         "name": "Teebken Wedding 2019",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
             "github": "https://github.com/tbone1020/Auto-Complete"
@@ -72,7 +72,7 @@
     {
         "name": "FreeCodeCamp",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
             "github": "https://github.com/tbone1020/Auto-Complete"
@@ -87,7 +87,7 @@
     {
         "name": "CodeFight Algortihms",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
             "github": "https://github.com/tbone1020/Auto-Complete"
@@ -102,7 +102,7 @@
     {
         "name": "CodeWars Algorithms",
         "image_path": "https://via.placeholder.com/350",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table, I created an auto-complete program where a user can type in a search phrase and hit \"Enter\". Typing the same phrase will pull it up in the search result box. I did my best to follow clean code principles such as small methods with descriptive names and descriptive property names. I also utilized Dependency Inversion and Single Responsibility of the S.O.L.I.D principles. An issue I ran into was I was trying to transfer the search results from one component to another. I noticed when using the Event Emitter, it only worked once and wouldn't worked again. I found out that Angular only emits the value if it's updated. To fix this issue, I emitted an object with the new value as the key.",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
             "github": "https://github.com/tbone1020/Auto-Complete"

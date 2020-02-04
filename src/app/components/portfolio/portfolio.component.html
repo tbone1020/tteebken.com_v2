@@ -1,17 +1,21 @@
-<section id="portfolio" #portfolioElement>
+<section id="portfolio">
   <div class="container">
     <h2>Projects I have worked on</h2>
     <div *ngIf="listOfPortfolioItems.length > 0 && isLoading === false">
-      <!-- <app-portfolio-item ngFor="let item of listOfPortfolioItems"
-      [name]="item.name"
-      [imagePath]="item.imagePath"></app-portfolio-item> -->
-      <h1 class="success">Success Grabbing Portfolio</h1>
+      <article id="portfolio__projects">
+        <app-portfolio-item *ngFor="let item of listOfPortfolioItems"
+          [name]="item.name"
+          [imagePath]="item.imagePath"
+          [description]="item.description"
+          [links]="item.links"
+          [technologies]="item.technologies"></app-portfolio-item>
+      </article> 
     </div>
     <div *ngIf="listOfPortfolioItems.length === 0 && isLoading === false" class="github-error-link container">
       <p>You can checkout projects that I have built and samples of code on my <a target="_blank" href="https://github.com/tbone1020">GitHub</a></p> 
     </div>
     <div *ngIf="listOfPortfolioItems.length === 0 && isLoading === true">
-      <div class="load-icon">
+      <div id="load-icon">
         <img src="https://cdn3.iconfinder.com/data/icons/glyph/227/Loading-512.png" alt="load icon">
       </div>
     </div>

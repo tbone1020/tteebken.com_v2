@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
+import { AboutComponent } from '../../../components/about/about.component';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.scss']
 })
-export class NavigationComponent implements OnInit {
+export class NavigationComponent implements AfterViewInit {
   
   private distancesFromTop: Object = {
     aboutOffset: 601,
@@ -13,9 +14,12 @@ export class NavigationComponent implements OnInit {
     certificatesOffset: 1317
   };
   
-  constructor() {}
+  constructor(private AboutComponent: ElementRef) {}
   
-  ngOnInit() { }
+  ngAfterViewInit() {
+    // TODO: add ngAfterViewInit to home component which should fire when all componts load, this includes the components
+    // you need the offsetTop
+  }
   
   determineWhereToScrollTo(section: string): void {
     window.scrollTo({ 

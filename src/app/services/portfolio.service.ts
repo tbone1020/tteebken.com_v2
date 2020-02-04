@@ -15,7 +15,7 @@ export class PortfolioService implements APortfolio {
   public async getProjects(): Promise<PortfolioItem[]> {
     try {
       const response = await this.http.get<IPortfolio[]>(this.BASE_URL).toPromise();
-      return response.map(item => new PortfolioItem(item.name, item.image_path, item.description, item.links.live_demo, item.links.github, item.technologies));
+      return response.map(item => new PortfolioItem(item.name, item.image_path, item.description, item.links, item.technologies));
     } catch(error) {
       console.log("Error calling portfolio items.", error);
       return [];

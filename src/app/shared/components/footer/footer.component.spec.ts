@@ -1,25 +1,14 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
   let component: FooterComponent;
-  let fixture: ComponentFixture<FooterComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
-    })
-    .compileComponents();
-  }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FooterComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    component = new FooterComponent();
+  })
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it ('Should have the current year', () => {
+    let thisYear = new Date().getFullYear();
+    expect(component.currentYear === thisYear).toBe(true);
   });
 });

@@ -1,22 +1,28 @@
 #about {
-    border-bottom: 1px solid black;
-    padding: 100px 0 200px;
+    border-top: 1px solid black;
+    padding: 100px 0;
     text-align: left;
     
     .about__description {
-
+        h2 {
+            padding-bottom: 50px;
+        }
         .about__paragraph-wrapper {
             
             .about__paragraph {
                 width: 50%;
-                font-size: 18px;
-                line-height: 20px;  
+                font-size: 20px;
+                line-height: 30px;  
                 display: inline-block;
                 text-align: left;
             }
             
             &.about--align-right {
                 text-align: right;
+            }
+
+            strong {
+                font-weight: bold;
             }
         }
     }

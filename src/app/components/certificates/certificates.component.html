@@ -5,7 +5,10 @@
       <figure class="certificate" *ngFor="let certificate of certificateList">
         <a class="certificate__link" href={{certificate.url}}>
           <img src={{certificate.image_path}} alt={{certificate.image_alt}} class="certificate__image">
-          <figcaption class="certificate__name">{{certificate.description}}</figcaption>
+          <figcaption class="certificate__info">
+            <h3 class="certificate__name">{{certificate.name}}</h3>
+            <p class="certificate__description">{{certificate.description}}</p>
+          </figcaption>
         </a>
       </figure>
     </section>

@@ -1,10 +1,35 @@
 footer {
     border-top: 1px solid black;
-    text-align: left;
     padding: 40px 0 30px;
 
+    .footer__links {
+        width: 49%;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+
+        .footer__link {
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            border: 1px solid black;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 30px;
+            padding: 10px;
+
+            .footer__icon {
+                font-size: 23px;
+                color: black;
+            }
+        }
+    }
+
     .footer__copy {
+        display: inline-block;
+        vertical-align: middle;
         font-size: 19px;
         line-height: 25px;
+        width: 49%;
+        text-align: left;
     }
 }

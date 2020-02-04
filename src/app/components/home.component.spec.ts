@@ -1,25 +1,36 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { HomeComponent } from './home.component';
+import { AboutComponent } from './about/about.component';
+import { CertificatesComponent } from './certificates/certificates.component';
+import { ContactComponent } from './contact/contact.component';
+import { HeroComponent } from './hero/hero.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+  describe('Component dependicies', () => {
+    
+    beforeEach(() => {
+      component = new HomeComponent();
+    });
+    it ('Should exist', () => {
+      expect(component).toBeDefined();
     })
-    .compileComponents();
-  }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
+    it ('Should have certificates component', () => {
+      expect(CertificatesComponent).toBeDefined();
+    });
+    
+    it ('Should have contact component', () => {
+      expect(ContactComponent).toBeDefined();
+    });
+    
+    it ('Should have hero component', () => {
+      expect(HeroComponent).toBeDefined();
+    });
+    
+    it ('Should have portfolio component', () => {
+      expect(PortfolioComponent).toBeDefined();
+    });
   });
 });

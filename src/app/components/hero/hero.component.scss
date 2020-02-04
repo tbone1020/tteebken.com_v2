@@ -12,11 +12,24 @@
 
     .hero__header {
       font-size: 60px;
-      font-weight: bold;
+      padding-bottom: 10px;
     }
     .hero__sub-header {
+      display: inline-block;
+      border-bottom: 1px solid black;
       font-size: 25px;
       font-weight: 500;
+      padding-bottom: 0;
+    }
+    .hero__icons {
+      padding: 25px 0 0;
+      
+      .icon__link {
+        // text-decoration: none;
+        color: black;
+        font-size: 35px;
+        padding: 0 20px 0 0;
+      }
     }
   }
 }
