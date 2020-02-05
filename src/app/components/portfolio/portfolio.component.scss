@@ -1,3 +1,4 @@
+@import "../../../assets/styles/mixins.scss";
 #portfolio {
   padding: 100px 0;
 
@@ -13,9 +14,15 @@
     .portfolio__project {
       flex-basis: 32%;
       margin: 0 0 40px 0;
+
+      @include breakpoint('md') {
+        flex-basis: 50%;
+      }
       
       &.portfolio__project:nth-child(3n + 2) {
-        margin: 0 2%;
+        @include breakpoint('min-md') {
+          margin: 0 2%;
+        }
       }
 
       &.portfolio__project:nth-last-child(1), &.portfolio__project:nth-last-child(2), &.portfolio__project:nth-last-child(3) {

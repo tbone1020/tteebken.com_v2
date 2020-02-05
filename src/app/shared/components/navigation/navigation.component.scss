@@ -1,3 +1,5 @@
+@import "../../../../assets/styles/mixins.scss";
+
 nav {
   // background: #009EFF;
   color: black;
@@ -10,21 +12,62 @@ nav {
   width: 70px;
   text-align: center;
 
-  .nav__logo {
-    font-size: 30px;
-    padding-bottom: 50px;
+  
+  @include breakpoint('md') {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 
-  .nav__list {
+  .container {
+    display: flex;
+    height: 50px;
 
-    .nav__item {
-      cursor: pointer;
-      padding: 0 0 25px;
-      
-      .fal {
-        font-size: 25px;
-        color: black;
+    @include breakpoint('min-md') {
+      display: block;
+      max-width: none;
+      height: auto;
+      width: auto;
+      margin: 0;
+    }
+    .nav__logo {
+      font-size: 30px;
+      padding-bottom: 50px;
+  
+      @include breakpoint('md') {
+        flex-basis: 40%;
+        align-self: center;
+        text-align: left;
+        padding: 0;
+      }
+    }
+  
+    .nav__list {
+        
+      @include breakpoint('md') {
+        flex-basis: 60%;
+        text-align: right;
+        align-self: center;
+      }
+  
+      .nav__item {
+        cursor: pointer;
+        padding: 0 0 25px;
+  
+        @include breakpoint('md') {
+          display: inline-block;
+          vertical-align: middle;
+          padding: 0 0 0 25px; 
+          text-align: right;
+        }
+        
+        .fal {
+          font-size: 25px;
+          color: black;
+        }
       }
     }
   }
+  
 }

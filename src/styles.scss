@@ -1,9 +1,14 @@
+@import './assets/styles/mixins.scss';
+
 body {
   font-family: 'Raleway', sans-serif;
 }
 main {
   display: block;
-  margin-left: 70px;
+
+  @include breakpoint('min-md') {
+    margin-left: 70px;
+  }
 }
 .container {
   max-width: 1200px;

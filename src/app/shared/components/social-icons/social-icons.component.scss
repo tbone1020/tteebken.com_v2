@@ -4,7 +4,10 @@
     .social-icons__link {
       color: black;
       font-size: 35px;
-      padding: 0 20px 0 0;
+
+      &:nth-child(2) {
+        padding: 0 20px;
+      }
 
       .social-icons__portfolio {
         position: relative;
