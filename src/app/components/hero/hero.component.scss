@@ -1,3 +1,5 @@
+@import "../../../assets/styles/mixins.scss";
+
 #hero {
   // background: url('assets/images/<IMAGE>');
   background-position: center;
@@ -5,6 +7,12 @@
   background-size: cover;
   border-bottom: 1px solid black;
   height: 600px;
+
+  @include breakpoint('md') {
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+  }
 
   .hero__text {
     position: relative;
@@ -21,15 +29,7 @@
       font-weight: 500;
       padding-bottom: 0;
     }
-    .hero__icons {
-      padding: 25px 0 0;
-      
-      .icon__link {
-        // text-decoration: none;
-        color: black;
-        font-size: 35px;
-        padding: 0 20px 0 0;
-      }
-    }
+
   }
+
 }

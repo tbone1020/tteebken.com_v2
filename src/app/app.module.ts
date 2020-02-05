@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PortfolioService } from './services/portfolio.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { TechItemPipe } from './shared/pipes/tech-item.pipe';
+import { SocialIconsComponent } from './shared/components/social-icons/social-icons.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { TechItemPipe } from './shared/pipes/tech-item.pipe';
     AboutComponent,
     ContactComponent,
     TechItemPipe,
+    SocialIconsComponent,
   ],
   imports: [
     BrowserModule,
