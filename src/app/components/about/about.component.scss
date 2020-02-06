@@ -1,28 +1,33 @@
+@import "../../../assets/styles/mixins.scss";
 #about {
     border-top: 1px solid black;
     padding: 100px 0;
-    text-align: left;
     
     .about__description {
         h2 {
             padding-bottom: 50px;
         }
+
         .about__paragraph-wrapper {
-            
-            .about__paragraph {
-                width: 50%;
-                font-size: 20px;
-                line-height: 30px;  
-                display: inline-block;
-                text-align: left;
-            }
-            
-            &.about--align-right {
-                text-align: right;
+            @include breakpoint('min-lg') {
+                display: flex;
+                justify-content: flex-end;
             }
 
-            strong {
-                font-weight: bold;
+            .about__paragraph {
+                font-size: 20px;
+                line-height: 30px;  
+                text-align: center;
+                
+                @include breakpoint('min-lg') {
+                    flex-basis: 50%;
+                    text-align: left;
+                }   
+
+                strong {
+                    font-weight: bold;
+                }
+                
             }
         }
     }

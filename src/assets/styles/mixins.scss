@@ -19,4 +19,10 @@
       @content;
     }
   }
+  @else if $class==min-lg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  
 }
