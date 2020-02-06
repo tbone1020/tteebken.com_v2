@@ -1,7 +1,7 @@
 [
     {
         "name": "Auto Complete",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
@@ -16,7 +16,7 @@
     },
     {
         "name": "Stripe Payment Website",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": null,
@@ -31,7 +31,7 @@
     },
     {
         "name": "Portfolio Website",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": null,
@@ -44,7 +44,7 @@
     },
     {
         "name": "Blackjack game",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
@@ -59,7 +59,7 @@
     },
     {
         "name": "Teebken Wedding 2019",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
@@ -71,7 +71,7 @@
     },
     {
         "name": "FreeCodeCamp",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
@@ -86,7 +86,7 @@
     },
     {
         "name": "CodeFight Algortihms",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
@@ -101,7 +101,7 @@
     },
     {
         "name": "CodeWars Algorithms",
-        "image_path": "https://via.placeholder.com/350",
+        "image_path": "https://via.placeholder.com/350x250",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
