@@ -1,5 +1,6 @@
+@import "../../../../assets/styles/mixins.scss";
 .portfolio-item {
-    margin-bottom: 50px;
+    padding-bottom: 90px;
 
     .portfolio-item__image-wrap {
         
@@ -38,10 +39,15 @@
 
             .portfolio__link {
                 color: black;
-                display: inline-block;
-                vertical-align: top;
-                text-decoration: none;
-                width: 45%;
+                display: block;
+                padding: 0 0 15px;
+                text-align: center;
+                
+                @include breakpoint('min-md') {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 45%;
+                } 
 
                 &:hover {
                     text-decoration: underline;

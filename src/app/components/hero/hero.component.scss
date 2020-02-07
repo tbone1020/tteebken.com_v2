@@ -7,6 +7,7 @@
   background-size: cover;
   border-bottom: 1px solid black;
   height: 600px;
+  display: flex;
 
   @include breakpoint('lg') {
     height: auto;
@@ -15,12 +16,21 @@
   }
 
   .hero__text {
-    position: relative;
-    top: 41%;
+    flex-basis: 100%;
+    align-self: center;
 
     .hero__header {
-      font-size: 60px;
+      font-size: 40px;
       padding-bottom: 10px;
+
+      @include breakpoint('min-sm') {
+        font-size: 50px;
+      }
+
+      @include breakpoint('min-md') {
+        font-size: 60px;
+      }
+
     }
     .hero__sub-header {
       display: inline-block;

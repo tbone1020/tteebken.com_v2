@@ -4,6 +4,11 @@
       @content;
     }
   }
+  @else if $class==min-sm {
+    @media (min-width: 540px) {
+      @content;
+    }
+  }
   @else if $class==md {
     @media (max-width: 768px) {
       @content;

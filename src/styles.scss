@@ -19,7 +19,9 @@ main {
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
+  text-transform: capitalize;
   font-size: 30px;
+  
   @include breakpoint('md') {
     text-align: center;
   }

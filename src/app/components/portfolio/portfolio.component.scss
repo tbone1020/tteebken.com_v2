@@ -14,7 +14,6 @@
 
     .portfolio__project {
       flex-basis: 32%;
-      margin: 0 0 40px 0;
 
       @include breakpoint('md') {
         flex-basis: 48%;
