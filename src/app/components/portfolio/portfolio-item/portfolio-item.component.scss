@@ -23,14 +23,15 @@
         .portfolio__technologies {
             padding: 10px 0;
             font-size: 12px;
+            min-height: 55px;
             text-align: center;
 
             strong {
                 display: inline-block;
-                margin: 0 0 4px;
+                margin: 0 1px 4px;
                 background: black;
                 color: white;
-                padding: 5px;
+                padding: 5px 8px;
             }
         }
         .portfolio__project-links {

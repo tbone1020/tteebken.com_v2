@@ -2,7 +2,9 @@
 #contact {
     padding: 100px 0;
     border-top: 1px solid black;
-
+    h2 {
+        text-align: center;
+    }
     #contact__button {
         display: block;
         border: 1px solid black;
@@ -13,7 +15,7 @@
         height: 45px;
         line-height: 45px;
         padding: 0 15px;
-        margin: 55px auto 0;
+        margin: 45px auto 0;
         
         @include breakpoint('min-md') {
             max-width: 200px;

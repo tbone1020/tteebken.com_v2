@@ -1,5 +1,7 @@
-import { Component, OnInit, ElementRef, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import { AboutComponent } from '../../../components/about/about.component';
+import { PortfolioComponent } from '../../../components/portfolio/portfolio.component';
+import { ContactComponent } from '../../../components/contact/contact.component';
 
 @Component({
   selector: 'app-navigation',
@@ -7,18 +9,17 @@ import { AboutComponent } from '../../../components/about/about.component';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements AfterViewInit {
-  
+  private contactTopDistance: number;
   private distancesFromTop: Object = {
     aboutOffset: 601,
     portfolioOffset: 976,
-    certificatesOffset: 1317
+    contactOffset: 1317
   };
   
-  constructor(private AboutComponent: ElementRef) {}
+  constructor() {}
   
   ngAfterViewInit() {
-    // TODO: add ngAfterViewInit to home component which should fire when all componts load, this includes the components
-    // you need the offsetTop
+    
   }
   
   determineWhereToScrollTo(section: string): void {

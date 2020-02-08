@@ -1,4 +1,5 @@
-import { Component, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,11 @@ import { Component, AfterViewInit, ElementRef } from '@angular/core';
 export class HomeComponent implements AfterViewInit {
 
   constructor() { }
-
+  
   ngAfterViewInit() {
-    
+    this.contactTopDistance = document.getElementsByClassName('contact')[0].offsetTop;
+    console.clear();
+    console.log(this.contactTopDistance);
   }
 
 }
