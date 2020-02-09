@@ -11,9 +11,7 @@ export class HomeComponent implements AfterViewInit {
   constructor() { }
   
   ngAfterViewInit() {
-    this.contactTopDistance = document.getElementsByClassName('contact')[0].offsetTop;
-    console.clear();
-    console.log(this.contactTopDistance);
+    
   }
 
 }
