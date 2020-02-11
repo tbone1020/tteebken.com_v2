@@ -1,4 +1,5 @@
 @import "../../../../assets/styles/mixins.scss";
+
 .portfolio-item {
     position: relative;
 
@@ -17,9 +18,7 @@
             z-index: 5;
             @include transition(300);
         }
-    }
-
-    @include breakpoint('min-lg') {
+        
         &:hover {
             &:after {
                 opacity: 1;
@@ -37,7 +36,6 @@
 
     .portfolio-item__image-wrap {
         
-
         .portfolio-item__image {
             width: 100%;
         }
@@ -57,7 +55,6 @@
             z-index: 9;
             opacity: 1;
             @include transition(300);
-
         }
         
         .portfolio-item__name {
@@ -69,7 +66,7 @@
             line-height: 20px;
         }
         .portfolio__technologies {
-            padding: 10px 0;
+            padding: 10px 5px;
             font-size: 12px;
             text-align: center;
 
@@ -120,8 +117,6 @@
                     font-size: 30px;
                 }
             }
-
-
         }
     }
 }
