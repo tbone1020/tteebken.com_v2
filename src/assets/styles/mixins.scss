@@ -29,5 +29,19 @@
       @content;
     }
   }
+
+  @else if $class==min-xlg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
   
+}
+
+@mixin transition($speed) {
+  -webkit-transition: all #{$speed}ms ease-in-out;
+  -moz-transition: all #{$speed}ms ease-in-out;
+  -ms-transition: all #{$speed}ms ease-in-out;
+  -o-transition: all #{$speed}ms ease-in-out;
+  transition: all #{$speed}ms ease-in-out;
 }

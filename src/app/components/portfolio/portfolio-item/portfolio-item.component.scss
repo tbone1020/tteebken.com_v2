@@ -1,6 +1,39 @@
 @import "../../../../assets/styles/mixins.scss";
 .portfolio-item {
-    padding-bottom: 90px;
+    position: relative;
+
+
+    @include breakpoint('min-lg') {
+        &:after {
+            background: rgba(0, 0, 0, 0.7);
+            content: '';
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 3px;
+            width: 100%;
+            opacity: 1;
+            z-index: 5;
+            @include transition(300);
+        }
+    }
+
+    @include breakpoint('min-lg') {
+        &:hover {
+            &:after {
+                opacity: 1;
+                @include transition(300);
+            }
+
+            .portfolio-item__project {
+                opacity: 1;
+                top: 0;
+                bottom: 0;
+                @include transition(300);
+            }
+        }
+    }
 
     .portfolio-item__image-wrap {
         
@@ -12,8 +45,23 @@
     .portfolio-item__project {
         text-align: center;
         
+        @include breakpoint('min-lg') {
+            color: white;
+            right: 0;
+            position: absolute;
+            // top: 50px;
+            top: 0;
+            // bottom: -150px;
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+            opacity: 1;
+            @include transition(300);
+
+        }
+        
         .portfolio-item__name {
-            font-size: 20px;
+            font-size: 25px;
             padding: 25px 0 15px;
         }
         .portfolio-item__description {
@@ -23,35 +71,53 @@
         .portfolio__technologies {
             padding: 10px 0;
             font-size: 12px;
-            min-height: 55px;
             text-align: center;
 
             strong {
-                display: inline-block;
-                margin: 0 1px 4px;
                 background: black;
                 color: white;
+                display: inline-block;
+                margin: 0 1px 7px;
+                font-size: 16px;
                 padding: 5px 8px;
+                
+                @include breakpoint('min-lg') {
+                    background: white;
+                    color: black;
+                }
             }
         }
         .portfolio__project-links {
             text-align: center;
-            padding: 15px 0 0;
+            
+            @include breakpoint('min-lg') {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 30px;
+            }
 
             .portfolio__link {
                 color: black;
-                display: block;
-                padding: 0 0 15px;
                 text-align: center;
+                display: inline-block;
+                vertical-align: top;
+                width: 45%;
+             
                 
-                @include breakpoint('min-md') {
-                    display: inline-block;
-                    vertical-align: top;
-                    width: 45%;
-                } 
+                @include breakpoint('min-lg') {
+                    color: white;
+                }
 
                 &:hover {
                     text-decoration: underline;
+                }
+
+                .fab {
+                    font-size: 35px;
+                }
+                .far {
+                    font-size: 30px;
                 }
             }
 

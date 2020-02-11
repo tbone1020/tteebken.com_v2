@@ -13,21 +13,25 @@
     flex-wrap: wrap;
 
     .portfolio__project {
-      flex-basis: 32%;
+      margin-bottom: 50px;
+      flex-basis: 100%;
+      overflow: hidden;
 
-      @include breakpoint('md') {
+      @include breakpoint('min-md') {
         flex-basis: 48%;
-      }
-      
-      &.portfolio__project:nth-child(3n + 2) {
-        @include breakpoint('min-md') {
-          margin: 0 2%;
+        margin-bottom: 20px;
+        &.portfolio__project:nth-child(even) {
+          margin-left: 4%;
         }
       }
-
-      &.portfolio__project:nth-child(even) {
-        @include breakpoint('md') {
-          margin-left: 4%;
+      
+      @include breakpoint('min-xlg') {
+        flex-basis: 32%;
+        &.portfolio__project:nth-child(even) {
+          margin-left: 0;
+        }
+        &.portfolio__project:nth-child(3n + 2) {
+          margin: 0 2% 20px;
         }
       }
 

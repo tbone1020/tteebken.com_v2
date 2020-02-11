@@ -26,7 +26,8 @@
             "Angular 8",
             "TypeScript",
             "SOLID Principles",
-            "Clean Code"
+            "Clean Code",
+            "BEM"
         ]
     },
     {
@@ -39,7 +40,9 @@
         },
         "technologies": [
             "Angular 8",
-            "TypeScript"
+            "TypeScript",
+            "SASS",
+            "BEM"
         ]
     },
     {
