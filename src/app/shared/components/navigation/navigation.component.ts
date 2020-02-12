@@ -1,7 +1,4 @@
 import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
-import { AboutComponent } from '../../../components/about/about.component';
-import { PortfolioComponent } from '../../../components/portfolio/portfolio.component';
-import { ContactComponent } from '../../../components/contact/contact.component';
 
 @Component({
   selector: 'app-navigation',
@@ -9,11 +6,11 @@ import { ContactComponent } from '../../../components/contact/contact.component'
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements AfterViewInit {
-  private contactTopDistance: number;
+
   private distancesFromTop: Object = {
-    aboutOffset: 601,
-    portfolioOffset: 976,
-    contactOffset: 1317
+    aboutOffset: null,
+    portfolioOffset: null,
+    contactOffset: null
   };
   
   constructor() {}
@@ -22,7 +19,9 @@ export class NavigationComponent implements AfterViewInit {
     
   }
   
-  determineWhereToScrollTo(section: string): void {
+  public determineWhereToScrollTo(section: string): void {
+    let htmlSection = document.getElementById(section).offsetTop;
+    this.distancesFromTop[section] = htmlSection;
     window.scrollTo({ 
       top: this.distancesFromTop[section], 
       behavior: 'smooth' 
