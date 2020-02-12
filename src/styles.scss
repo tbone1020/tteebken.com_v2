@@ -20,9 +20,15 @@ h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
   font-weight: 200;
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 30px;
+  text-align: center;
   
-  @include breakpoint('md') {
-    text-align: center;
+  @include breakpoint('min-lg') {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  @include breakpoint('min-md') {
+    font-size: 35px;
   }
 }

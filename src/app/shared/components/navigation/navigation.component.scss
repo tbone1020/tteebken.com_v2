@@ -38,6 +38,7 @@ nav {
     .nav__logo {
       font-size: 30px;
       padding-bottom: 50px;
+      text-align: center;
   
       @include breakpoint('lg') {
         flex-basis: 40%;
