@@ -6,7 +6,7 @@ import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements AfterViewInit {
-  
+
   constructor() {}
   
   ngAfterViewInit() {

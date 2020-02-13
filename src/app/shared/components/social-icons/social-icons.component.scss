@@ -1,7 +1,28 @@
+@import '../../../../assets/styles/variables.scss';
+
 .social-icons {
+
+    &.social-icon--light {
+      .social-icons__link {
+        color: white;
+
+        .social-icons__icon:nth-child(1), .social-icons__icon:nth-child(2) {
+          color: $dark-gray;
+        }
+      }
+    }
+
+    &.social-icon--dark {
+      .social-icons__link {
+        color: $secondary;
+
+        .social-icons__icon:nth-child(1), .social-icons__icon:nth-child(2) {
+          color: white;
+        }
+      }
+    }
     
     .social-icons__link {
-      color: black;
       font-size: 35px;
 
       &:nth-child(2) {
@@ -17,13 +38,11 @@
         .fa-user {
           font-size: 10px;
           font-weight: bold;
-          color: white;
           left: 4px;
           top: 7px;
         }
         .fa-align-left {
           font-size: 15px;
-          color: white;
           font-weight: 500;
           left: 5px;
           bottom: 6px;

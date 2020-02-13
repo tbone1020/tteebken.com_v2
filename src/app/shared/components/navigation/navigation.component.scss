@@ -1,7 +1,9 @@
 @import "../../../../assets/styles/mixins.scss";
+@import '../../../../assets/styles/variables.scss';
 
 nav {
-  // background: #009EFF;
+  background: white;
+  box-shadow: 1px 1px 5px 2px rgba($dark-gray, 0.2);
   color: black;
   padding: 15px 0 0;
   position: fixed;
@@ -21,7 +23,7 @@ nav {
   }
 
   @include breakpoint('min-lg') {
-    border-right: 1px solid black;
+    
   }
 
   .container {
