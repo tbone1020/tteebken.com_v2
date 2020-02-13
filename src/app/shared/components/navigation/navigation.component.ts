@@ -6,12 +6,6 @@ import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements AfterViewInit {
-
-  private distancesFromTop: Object = {
-    aboutOffset: null,
-    portfolioOffset: null,
-    contactOffset: null
-  };
   
   constructor() {}
   
@@ -19,13 +13,17 @@ export class NavigationComponent implements AfterViewInit {
     
   }
   
-  public determineWhereToScrollTo(section: string): void {
-    let htmlSection = document.getElementById(section).offsetTop;
-    this.distancesFromTop[section] = htmlSection;
+  public scrollToSection(section: string): void {
+    let travelDistance = this.determineWhereToScrollTo(section);
     window.scrollTo({ 
-      top: this.distancesFromTop[section], 
+      top: travelDistance, 
       behavior: 'smooth' 
     });
+  }
+
+  private determineWhereToScrollTo(section: string) {
+    return document.getElementById(section).offsetTop;
+
   }
 
 }

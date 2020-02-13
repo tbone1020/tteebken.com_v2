@@ -2,13 +2,13 @@
   <div class="container">
     <h1 class="nav__logo">T</h1>
     <ul class="nav__list">
-      <li class="nav__item" (click)="determineWhereToScrollTo('portfolio')">
-        <i class="fal fa-code"></i>
-      </li>
-      <li class="nav__item" (click)="determineWhereToScrollTo('about')">
+      <li class="nav__item" (click)="scrollToSection('about')">
         <i class="fal fa-user"></i>
       </li>
-      <li class="nav__item" (click)="determineWhereToScrollTo('contact')">
+      <li class="nav__item" (click)="scrollToSection('portfolio')">
+        <i class="fal fa-code"></i>
+      </li>
+      <li class="nav__item" (click)="scrollToSection('contact')">
         <i class="fal fa-envelope"></i>
       </li>
     </ul>
