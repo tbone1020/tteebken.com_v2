@@ -1,6 +1,9 @@
 @import "../../../assets/styles/mixins.scss";
+@import '../../../assets/styles/variables.scss';
+
 #about {
-    border-bottom: 1px solid black;
+    background: $primary;
+    color: white;
     padding: 100px 0;
     
     .about__description {

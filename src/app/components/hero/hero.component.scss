@@ -1,11 +1,11 @@
 @import "../../../assets/styles/mixins.scss";
+@import '../../../assets/styles/variables.scss';
 
 #hero {
   // background: url('assets/images/<IMAGE>');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 1px solid black;
   height: 600px;
   display: flex;
 
@@ -18,10 +18,18 @@
   .hero__text {
     flex-basis: 100%;
     align-self: center;
+    color: black;
 
     .hero__header {
       font-size: 40px;
       padding-bottom: 10px;
+      opacity: 0;
+      @include transition(1500);
+
+      &.hero__header--show {
+        opacity: 1;
+        @include transition(1500);
+      }  
 
       @include breakpoint('min-sm') {
         font-size: 50px;
@@ -36,6 +44,13 @@
       font-size: 25px;
       font-weight: 500;
       margin-bottom: 25px;
+      opacity: 0;
+
+      &.hero__sub-header--show {
+        // color: green;
+        opacity: 1;
+        @include transition(1500);
+      }    
     }
 
   }

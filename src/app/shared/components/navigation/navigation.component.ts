@@ -14,9 +14,9 @@ export class NavigationComponent implements AfterViewInit {
   }
   
   public scrollToSection(section: string): void {
-    let travelDistance = this.determineWhereToScrollTo(section);
+    let sectionsDistanceFromTop = this.determineWhereToScrollTo(section);
     window.scrollTo({ 
-      top: travelDistance, 
+      top: sectionsDistanceFromTop, 
       behavior: 'smooth' 
     });
   }

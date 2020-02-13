@@ -1,6 +1,8 @@
 @import "../../../assets/styles/mixins.scss";
+@import '../../../assets/styles/variables.scss';
 
 #portfolio {
+  background: white;
   padding: 100px 0;
 
   h2 {
