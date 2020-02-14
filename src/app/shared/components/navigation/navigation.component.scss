@@ -2,73 +2,39 @@
 @import '../../../../assets/styles/variables.scss';
 
 nav {
-  background: white;
-  box-shadow: 1px 1px 5px 2px rgba($dark-gray, 0.2);
+  background: $light-gray;
   color: black;
-  padding: 15px 0 0;
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 70px;
-  text-align: center;
-
-  
-  @include breakpoint('lg') {
-    position: relative;
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid black;
-    padding: 0;
-  }
-
-  @include breakpoint('min-lg') {
-    
-  }
+  width: 100%;
+  z-index: 9;
 
   .container {
+    align-items: center;
+    display: -webkit-flex;
     display: flex;
     height: 50px;
+    margin: 0 auto;
 
-    @include breakpoint('min-lg') {
-      display: block;
-      max-width: none;
-      height: auto;
-      width: auto;
-      margin: 0;
-    }
     .nav__logo {
       font-size: 30px;
-      padding-bottom: 50px;
-      text-align: center;
-  
-      @include breakpoint('lg') {
-        flex-basis: 40%;
-        align-self: center;
-        text-align: left;
-        padding: 0;
-      }
+      flex-basis: 50%;
+      text-align: left;
     }
   
     .nav__list {
-        
-      @include breakpoint('lg') {
-        flex-basis: 60%;
-        text-align: right;
-        align-self: center;
-      }
-  
+      flex-basis: 50%;
+      text-align: right;
+
       .nav__item {
         cursor: pointer;
         padding: 0 0 25px;
-  
-        @include breakpoint('lg') {
-          display: inline-block;
-          vertical-align: middle;
-          margin: 0 13px;
-          padding: 0;
-          text-align: right;
-        }
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 13px;
+        padding: 0;
+        text-align: right;
         
         .fal {
           font-size: 25px;
@@ -77,5 +43,4 @@ nav {
       }
     }
   }
-  
 }
