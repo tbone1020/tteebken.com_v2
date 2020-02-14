@@ -29,12 +29,14 @@ nav {
 
       .nav__item {
         cursor: pointer;
-        padding: 0 0 25px;
         display: inline-block;
         vertical-align: middle;
-        margin: 0 13px;
         padding: 0;
         text-align: right;
+
+        &:nth-child(2) {
+          margin: 0 25px;
+        }
         
         .fal {
           font-size: 25px;
