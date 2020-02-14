@@ -1,7 +1,9 @@
 @import '../../../../assets/styles/mixins.scss';
 @import '../../../../assets/styles/variables.scss';
-footer {
-    padding: 40px 0 30px;
+footer {    
+    background: $dark-gray;
+    color: white;
+    padding: 160px 0 30px;
 
     .container {
         
@@ -10,7 +12,6 @@ footer {
         }
 
         .footer__copy {
-            color: $dark-gray;
             font-size: 16px;
             line-height: 34px;
             text-align: center;

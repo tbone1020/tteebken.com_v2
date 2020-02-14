@@ -2,9 +2,16 @@
 @import '../../../assets/styles/variables.scss';
 
 #contact {
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
     background: $primary;
-    color: $light-gray;
+    color: white;
     padding: 100px 0;
+    width: 80%;
+    padding: 20px 0;
+    position: relative;
+    top: 82px;
+    margin: auto;
     
     h2 {
         text-align: center;

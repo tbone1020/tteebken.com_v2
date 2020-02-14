@@ -13,7 +13,7 @@
 
   &:after {
     content: '';
-    background: rgba($dark-gray, 0.8);
+    background: rgba($light-gray, 0.8);
     position: absolute;
     left: 0;
     top: 0;
@@ -29,7 +29,7 @@
   }
 
   .hero__text {
-    color: white;
+    color: $dark-gray;
     flex-basis: 100%;
     align-self: center;
     position: relative;
