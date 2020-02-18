@@ -2,7 +2,8 @@
 @import '../../../../assets/styles/variables.scss';
 
 nav {
-  background: $light-gray;
+  box-shadow: 1px 1px 3px 1px rgba($dark-gray, 0.2);
+  background: white;
   color: black;
   position: fixed;
   left: 0;
@@ -35,7 +36,7 @@ nav {
         text-align: right;
 
         &:nth-child(2) {
-          margin: 0 25px;
+          margin: 0 30px;
         }
         
         .fal {

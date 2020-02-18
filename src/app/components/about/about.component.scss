@@ -2,9 +2,9 @@
 @import '../../../assets/styles/variables.scss';
 
 #about {
-    background: $primary;
-    color: white;
-    padding: 100px 0;
+    background: white;
+    color: $dark-gray;
+    padding: 110px 0 100px;
     
     .about__description {
         h2 {
