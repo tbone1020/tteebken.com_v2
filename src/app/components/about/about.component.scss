@@ -4,14 +4,13 @@
 #about {
     background: white;
     color: $dark-gray;
-    padding: 110px 0 100px;
+    padding: 100px 0 140px;
     
     .about__description {
-        h2 {
-            padding-bottom: 50px;
-        }
 
         .about__paragraph-wrapper {
+            padding-top: 50px;
+            
             @include breakpoint('min-lg') {
                 display: flex;
                 justify-content: flex-end;

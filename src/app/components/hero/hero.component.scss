@@ -10,20 +10,30 @@
   // background: rgba($primary, 0.7);
   background: $primary;
   position: relative;
+  overflow: hidden;
   background-size: cover;
-  height: 600px;
+  height: 700px;
   display: flex;
 
+  .hero__brackets {
+    right: 100px;
+    font-size: 130px;
+    bottom: 50px;
+  }
+
+  .hero__curly-braces {
+    bottom: -64px;
+    font-size: 140px;
+    right: 235px;
+  }
+
   &:after {
-    background: $primary;
-    height: 100px;
-    transform:rotate(-3deg);
-    content: '';
+    content: "";
     position: absolute;
-    left: 0;
-    bottom: -40px;
-    width: 100%;
-    z-index: 9;
+    color: rgba(255, 255, 255, 0.1);
+    bottom: 40px;
+    font-size: 50px;
+    right: 15px;
   }
 
   @include breakpoint('lg') {
@@ -69,6 +79,51 @@
       }    
     }
 
+  }
+
+  .hero__clouds {
+    position: absolute;
+    left: -300px;
+    animation: animate 100s linear infinite;
+    width: 150px;
+    z-index: 5;
+
+    .hero__cloud--cloud-1 {
+      bottom: 10px;
+      left: -150px;
+    }
+
+    .hero__cloud--cloud-2 {
+      top: 150px;
+      left: 300px;
+
+      .hero__cloud-image {
+        opacity: 0.2;
+      }
+    }
+
+    .hero__cloud--cloud-3 {
+      top: 100px;
+      left: 50px;
+    }
+
+    .hero__cloud--cloud-4 {
+      top: 0;
+      left: 200px;
+    }
+
+    .hero__cloud-image {
+      width: 100%;
+    }
+  }
+
+  @keyframes animate {
+    0% {
+      left: inherit;
+    }
+    100% {
+      left: 100%;
+    }
   }
 
 }
