@@ -83,8 +83,7 @@
 
   .hero__clouds {
     position: absolute;
-    left: -300px;
-    animation: animate 100s linear infinite;
+    // animation: animate 100s linear infinite;
     width: 150px;
     z-index: 5;
 
@@ -119,7 +118,7 @@
 
   @keyframes animate {
     0% {
-      left: inherit;
+      left: 0;
     }
     100% {
       left: 100%;

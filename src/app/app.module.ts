@@ -16,6 +16,7 @@ import { PortfolioService } from './services/portfolio.service';
 import { ContactComponent } from './components/contact/contact.component';
 import { TechItemPipe } from './shared/pipes/tech-item.pipe';
 import { SocialIconsComponent } from './shared/components/social-icons/social-icons.component';
+import { CloudsComponent } from './components/hero/clouds/clouds.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SocialIconsComponent } from './shared/components/social-icons/social-ic
     ContactComponent,
     TechItemPipe,
     SocialIconsComponent,
+    CloudsComponent,
   ],
   imports: [
     BrowserModule,
