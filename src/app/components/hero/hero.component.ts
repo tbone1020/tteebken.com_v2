@@ -7,15 +7,10 @@ import { Component, AfterViewInit } from '@angular/core';
 })
 export class HeroComponent implements AfterViewInit {
 
-  private privateShowHeaderStyle: string = null;
-  private privateShowSubHeaderStyle: string = null;
-
   constructor() { }
 
   ngAfterViewInit() {
-    // this.privateShowHeaderStyle = "hero__header--show";
-    // this.privateShowSubHeaderStyle = "hero__sub-header--show";
-    console.log("Done loading");
+    
   }
 
 }

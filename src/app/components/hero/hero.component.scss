@@ -81,48 +81,12 @@
 
   }
 
-  .hero__clouds {
+  .clouds {
     position: absolute;
-    // animation: animate 100s linear infinite;
-    width: 150px;
-    z-index: 5;
-
-    .hero__cloud--cloud-1 {
-      bottom: 10px;
-      left: -150px;
-    }
-
-    .hero__cloud--cloud-2 {
-      top: 150px;
-      left: 300px;
-
-      .hero__cloud-image {
-        opacity: 0.2;
-      }
-    }
-
-    .hero__cloud--cloud-3 {
-      top: 100px;
-      left: 50px;
-    }
-
-    .hero__cloud--cloud-4 {
-      top: 0;
-      left: 200px;
-    }
-
-    .hero__cloud-image {
-      width: 100%;
-    }
-  }
-
-  @keyframes animate {
-    0% {
-      left: 0;
-    }
-    100% {
-      left: 100%;
-    }
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
   }
 
 }
