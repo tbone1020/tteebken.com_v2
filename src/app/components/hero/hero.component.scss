@@ -2,12 +2,6 @@
 @import '../../../assets/styles/variables.scss';
 
 #hero {
-  // background: url('../../../assets/images/train-station.jpg');
-  // background-size: cover;
-  // background-position: center;
-  // background-attachment: fixed;
-  // background-repeat: no-repeat;
-  // background: rgba($primary, 0.7);
   background: $primary;
   position: relative;
   overflow: hidden;
@@ -38,7 +32,7 @@
 
   @include breakpoint('lg') {
     height: auto;
-    padding: 50px 0;
+    padding: 140px 0 110px;
     text-align: center;
   }
 
@@ -52,12 +46,6 @@
     .hero__header {
       font-size: 40px;
       padding-bottom: 10px;
-      @include transition(1500);
-
-      &.hero__header--show {
-        opacity: 1;
-        @include transition(1500);
-      }  
 
       @include breakpoint('min-sm') {
         font-size: 50px;
@@ -72,11 +60,6 @@
       font-size: 25px;
       font-weight: 500;
       margin-bottom: 25px;
-
-      &.hero__sub-header--show {
-        opacity: 1;
-        @include transition(1500);
-      }    
     }
 
   }

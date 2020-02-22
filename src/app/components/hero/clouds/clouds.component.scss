@@ -1,3 +1,15 @@
+@import "../../../../assets/styles/mixins.scss";
+@import '../../../../assets/styles/variables.scss';
+
+@keyframes animate {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 .hero__clouds {
     position: absolute;
     width: 100%;
@@ -5,17 +17,23 @@
 
     .hero__cloud {
         position: absolute;
-        animation-name: animate;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
+        display: none;
         left: -200px;
-        width: 170px;
+        width: 200px;
         z-index: 9;
 
+        @include breakpoint('min-lg') {
+          animation-iteration-count: infinite;
+          animation-name: animate;
+          animation-timing-function: ease-out;
+          display: block;
+        }
+
         &.hero__cloud--cloud-1 {
-          bottom: 10px;
+          bottom: 25px;
           animation-delay: 20s;
-          animation-duration: 37s;
+          animation-duration: 42s;
+          width: 120px;
     
           .hero__cloud-image {
             opacity: 0.6;
@@ -28,9 +46,10 @@
         }
     
         &.hero__cloud--cloud-3 {
-          top: 230px;
+          top: 245px;
           animation-delay: 35s;
-          animation-duration: 50s;
+          animation-duration: 58s;
+          width: 120px;
     
           .hero__cloud-image {
             opacity: 0.2;
@@ -38,22 +57,14 @@
         }
     
         &.hero__cloud--cloud-4 {
-          top: 100px;
-          animation-delay: 6s;
-          animation-duration: 55s;
+          top: 90px;
+          animation-delay: 14s;
+          animation-duration: 29s;
         }
     
         .hero__cloud-image {
           width: 100%;
         }
+
     }
 }
-
-  @keyframes animate {
-    0% {
-      left: -200px;
-    }
-    100% {
-      left: 100%;
-    }
-  }
