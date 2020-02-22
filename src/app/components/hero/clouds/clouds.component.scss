@@ -20,7 +20,7 @@
         display: none;
         left: -200px;
         width: 200px;
-        z-index: 9;
+        z-index: 7;
 
         @include breakpoint('min-lg') {
           animation-iteration-count: infinite;
