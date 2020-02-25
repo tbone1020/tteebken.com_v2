@@ -7,7 +7,33 @@
   overflow: hidden;
   background-size: cover;
   height: 700px;
+  padding-bottom: 100px;
   display: flex;
+
+  @include breakpoint('min-lg') {
+    &:before {
+      content: '';
+      background: url('../../../assets/images/clouds-divider-svg.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 85px;
+      width: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    bottom: 40px;
+    font-size: 50px;
+    right: 15px;
+  }
 
   .hero__brackets {
     right: 100px;
@@ -19,15 +45,6 @@
     bottom: -64px;
     font-size: 140px;
     right: 235px;
-  }
-
-  &:after {
-    content: "";
-    position: absolute;
-    color: rgba(255, 255, 255, 0.1);
-    bottom: 40px;
-    font-size: 50px;
-    right: 15px;
   }
 
   @include breakpoint('lg') {
@@ -44,7 +61,7 @@
     z-index: 8;
 
     .hero__header {
-      font-size: 40px;
+      font-size: 45px;
       padding-bottom: 10px;
 
       @include breakpoint('min-sm') {

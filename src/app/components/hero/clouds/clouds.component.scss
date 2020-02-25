@@ -25,14 +25,14 @@
         @include breakpoint('min-lg') {
           animation-iteration-count: infinite;
           animation-name: animate;
-          animation-timing-function: ease-out;
+          animation-timing-function: linear;
           display: block;
         }
 
         &.hero__cloud--cloud-1 {
-          bottom: 25px;
+          bottom: 125px;
           animation-delay: 20s;
-          animation-duration: 42s;
+          animation-duration: 85s;
           width: 120px;
     
           .hero__cloud-image {
@@ -41,14 +41,14 @@
         }
     
         &.hero__cloud--cloud-2 {
-          bottom: 150px;
-          animation-duration: 28s;
+          bottom: 250px;
+          animation-duration: 48s;
         }
     
         &.hero__cloud--cloud-3 {
           top: 245px;
           animation-delay: 35s;
-          animation-duration: 58s;
+          animation-duration: 100s;
           width: 120px;
     
           .hero__cloud-image {
@@ -59,7 +59,7 @@
         &.hero__cloud--cloud-4 {
           top: 90px;
           animation-delay: 14s;
-          animation-duration: 29s;
+          animation-duration: 50s;
         }
     
         .hero__cloud-image {
