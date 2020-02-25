@@ -1,13 +1,14 @@
 @import '../../../../assets/styles/variables.scss';
 
 .social-icons {
+    text-align: center;
 
     &.social-icon--light {
       .social-icons__link {
         color: white;
 
         .social-icons__icon:nth-child(1), .social-icons__icon:nth-child(2) {
-          color: $dark-gray;
+          color: $primary;
         }
       }
     }
