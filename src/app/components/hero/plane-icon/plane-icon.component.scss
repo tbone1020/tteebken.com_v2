@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/mixins.scss";
+@import '../../../../assets/styles/variables.scss';
+
+@keyframes animatePlane {
+    0% {
+        left: -9999px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.plane__wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 7;
+
+    .plane__icon {
+        display: none;
+        position: absolute;
+        left: -9999px;
+        // left: 150px;
+        top: 200px;
+        font-size: 40px;
+        color: white;
+
+        @include breakpoint('min-lg') {
+            animation-iteration-count: infinite;
+            animation-name: animatePlane;
+            animation-timing-function: linear;
+            animation-delay: 15s;
+            animation-duration: 100s;
+            display: block;
+        }
+    }
+}

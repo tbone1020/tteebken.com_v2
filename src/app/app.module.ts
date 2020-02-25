@@ -17,6 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { TechItemPipe } from './shared/pipes/tech-item.pipe';
 import { SocialIconsComponent } from './shared/components/social-icons/social-icons.component';
 import { CloudsComponent } from './components/hero/clouds/clouds.component';
+import { PlaneIconComponent } from './components/hero/plane-icon/plane-icon.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { CloudsComponent } from './components/hero/clouds/clouds.component';
     TechItemPipe,
     SocialIconsComponent,
     CloudsComponent,
+    PlaneIconComponent,
   ],
   imports: [
     BrowserModule,

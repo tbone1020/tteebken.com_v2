@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/mixins.scss";
 @import '../../../../assets/styles/variables.scss';
 
-@keyframes animate {
+@keyframes animateClouds {
   0% {
     left: -200px;
   }
@@ -24,7 +24,7 @@
 
         @include breakpoint('min-lg') {
           animation-iteration-count: infinite;
-          animation-name: animate;
+          animation-name: animateClouds;
           animation-timing-function: linear;
           display: block;
         }

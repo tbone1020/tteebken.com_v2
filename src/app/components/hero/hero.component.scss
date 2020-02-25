@@ -21,7 +21,7 @@
       bottom: -1px;
       left: 0;
       right: 0;
-      height: 85px;
+      height: 100%;
       width: 100%;
     }
   }
@@ -81,7 +81,7 @@
 
   }
 
-  .clouds {
+  .clouds, .plane {
     position: absolute;
     left: 0;
     top: 0;
