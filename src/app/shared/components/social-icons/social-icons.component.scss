@@ -11,17 +11,20 @@
       }
 
       .social-icons__portfolio { 
+        position: relative;
 
         .fa-user, .fa-align-left {
           position: absolute;
         }
         .fa-user {
           font-size: 10px;
+          color: white;
           font-weight: bold;
           left: 4px;
           top: 7px;
         }
         .fa-align-left {
+          color: white;
           font-size: 15px;
           font-weight: 500;
           left: 5px;
