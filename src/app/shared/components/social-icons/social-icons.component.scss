@@ -1,7 +1,6 @@
 @import '../../../../assets/styles/variables.scss';
 
 .social-icons {
-    text-align: center;
 
     &.social-icon--light {
       .social-icons__link {
@@ -32,6 +31,7 @@
 
       .social-icons__portfolio {
         position: relative;
+        z-index: 1;
 
         .fa-user, .fa-align-left {
           position: absolute;
