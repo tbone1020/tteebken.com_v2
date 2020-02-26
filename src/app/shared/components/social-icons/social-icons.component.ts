@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./social-icons.component.scss']
 })
 export class SocialIconsComponent implements OnInit {
-  @Input('color') color: string; 
 
   constructor() { }
 

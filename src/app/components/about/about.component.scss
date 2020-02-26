@@ -10,10 +10,11 @@
 
         .about__paragraph-wrapper {
             padding-top: 50px;
+            justify-content: center;
+
             
             @include breakpoint('min-lg') {
                 display: flex;
-                justify-content: flex-end;
             }
 
             .about__paragraph {
@@ -23,7 +24,6 @@
                 
                 @include breakpoint('min-lg') {
                     flex-basis: 50%;
-                    text-align: left;
                 }   
 
                 strong {

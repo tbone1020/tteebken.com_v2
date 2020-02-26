@@ -11,15 +11,16 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Slab', serif;
-  font-weight: 200;
+  font-weight: 300;
   text-transform: capitalize;
+  text-align: center;
   font-size: 30px;
-  
-  @include breakpoint('min-lg') {
-    font-size: 40px;
-  }
 
   @include breakpoint('min-md') {
     font-size: 35px;
+  }
+  
+  @include breakpoint('min-lg') {
+    font-size: 40px;
   }
 }
