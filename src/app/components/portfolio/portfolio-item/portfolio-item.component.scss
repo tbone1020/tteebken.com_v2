@@ -57,14 +57,22 @@
         
         .portfolio-item__name {
             font-size: 25px;
-            color: white;
+            color: $dark;
             padding: 25px 0 15px;
             text-align: center;
+            
+            @include breakpoint('min-lg') {
+                color: white;
+            }
         }
         .portfolio-item__skills {
-            color: white;
             text-align: center;
+            color: $dark;
             font-size: 20px;
+            
+            @include breakpoint('min-lg') {
+                color: white;
+            }
         }
         .portfolio__technologies {
             padding: 10px 5px;

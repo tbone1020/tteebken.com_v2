@@ -14,7 +14,6 @@ export class ParallaxScrollDirective implements AfterViewInit {
   
   ngAfterViewInit() {
     this.initialTop = this.startingPosition;
-    console.log(`Initial top ${this.initialTop}`);
   }
 
   @HostListener("window:scroll", ["$event"])
