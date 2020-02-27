@@ -1,21 +1,25 @@
-import { Directive, Input, HostListener, ElementRef } from '@angular/core';
+import { Directive, Input, HostListener, ElementRef, AfterViewInit } from '@angular/core';
 
 @Directive({
   selector: '[appParallaxScroll]'
 })
-export class ParallaxScrollDirective {
+export class ParallaxScrollDirective implements AfterViewInit {
 
   @Input('startingPosition') startingPosition: number;
-  @Input('ratio') parallaxRatio: number;
-  private initialTop: number;
+  @Input('ratio') parallaxRatio : number = 1
+  private initialTop: number = 0;
 
   constructor(private eleRef : ElementRef) {
-    this.initialTop = this.eleRef.nativeElement.getBoundingClientRect().top
+  }
+  
+  ngAfterViewInit() {
+    this.initialTop = this.startingPosition;
+    console.log(`Initial top ${this.initialTop}`);
   }
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(event){
-    this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px';
+    this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
   }
 
 }
