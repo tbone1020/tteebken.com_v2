@@ -2,27 +2,20 @@
 
 #left-background-shape {
     background-image: url('../../assets/images/triangle-bg-right.svg');
-    background-size: cover;
-    background-position: center;
-    position: fixed;
     top: 200px;
-    left: 0;
     height: 1000px;
-    width: 100%;
-    z-index: -1;
 }
 
 #right-background-shape {
     background-image: url('../../assets/images/triangle-bg-left.svg');
+    top: 1800px;
+    height: 1000px;
+}
+#right-background-shape, #left-background-shape {
     background-size: cover;
     background-position: center;
     position: fixed;
-    top: 1800px;
     left: 0;
-    height: 1000px;
     width: 100%;
     z-index: -1;
 }
-// #right-background-shape, #left-background-shape {
-
-// }
