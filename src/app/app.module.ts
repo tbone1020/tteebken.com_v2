@@ -18,6 +18,7 @@ import { TechItemPipe } from './shared/pipes/tech-item.pipe';
 import { SocialIconsComponent } from './shared/components/social-icons/social-icons.component';
 import { CloudsComponent } from './components/hero/clouds/clouds.component';
 import { PlaneIconComponent } from './components/hero/plane-icon/plane-icon.component';
+import { ParallaxScrollDirective } from './directives/parallax-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PlaneIconComponent } from './components/hero/plane-icon/plane-icon.comp
     SocialIconsComponent,
     CloudsComponent,
     PlaneIconComponent,
+    ParallaxScrollDirective,
   ],
   imports: [
     BrowserModule,

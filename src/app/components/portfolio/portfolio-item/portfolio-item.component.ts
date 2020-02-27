@@ -11,7 +11,6 @@ export class PortfolioItemComponent implements OnInit {
 
   @Input() name: string;
   @Input() imagePath: string;
-  @Input() description: string;
   @Input() links: Object;
   @Input() technologies: string[];
   
