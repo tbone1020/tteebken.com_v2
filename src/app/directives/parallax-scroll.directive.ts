@@ -17,7 +17,9 @@ export class ParallaxScrollDirective implements AfterViewInit {
 
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(event){
-    this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
+    if (window.innerWidth > 769) {
+      this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
+    } 
   }
 
 }
