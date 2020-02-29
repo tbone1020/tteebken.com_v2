@@ -9,8 +9,7 @@ export class ParallaxScrollDirective implements AfterViewInit {
   @Input('ratio') parallaxRatio : number = 1
   private initialTop: number = 0;
 
-  constructor(private eleRef : ElementRef) {
-  }
+  constructor(private eleRef : ElementRef) {}
   
   ngAfterViewInit() {
     this.initialTop = this.startingPosition;
