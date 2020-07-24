@@ -5,4 +5,8 @@ describe('TechItemPipe', () => {
     const pipe = new TechItemPipe();
     expect(pipe).toBeTruthy();
   });
+
+  it ('creates list of portfolio items', () => {
+
+  });
 });

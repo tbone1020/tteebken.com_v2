@@ -15,7 +15,6 @@
 
     .portfolio__project {
       flex-basis: 100%;
-      overflow: hidden;
       margin-bottom: 20px;
       
       @include breakpoint('min-md') {

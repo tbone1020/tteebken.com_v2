@@ -17,4 +17,8 @@
     height: 720px;
     width: 100%;
     z-index: -1;
+    
+    @media (min-width: 1200px) {
+        height: 1200px;
+    }
 }

@@ -7,8 +7,12 @@
     
     .about__description {
         .about__image-wrapper {
-            width: 300px;
+            width: 290px;
             margin: auto;
+            
+            @include breakpoint('min-md') {
+                width: 300px;
+            }
 
             .about__image {
                 width: 100%;;

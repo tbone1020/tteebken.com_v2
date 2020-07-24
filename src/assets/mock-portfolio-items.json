@@ -1,7 +1,21 @@
 [
     {
+        "name": "JSON Translator App",
+        "image_path": "destini-translator-app.png",
+        "description": "",
+        "links": {
+            "live_demo": "http://tteebken.com/translator-app",
+            "github": "https://github.com/tbone1020/language-translate"
+        },
+        "technologies": [
+            "React.js",
+            "TypeScript",
+            "3rd party API"
+        ]
+    },
+    {
         "name": "Auto Complete",
-        "image_path": "https://via.placeholder.com/350x250",
+        "image_path": "auto-complete.png",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://tteebken.com/auto-complete",
@@ -10,111 +24,35 @@
         "technologies": [
             "Angular 8",
             "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
+            "Trie Data Structure"
         ]
     },
     {
-        "name": "Stripe Payment Website",
-        "image_path": "https://via.placeholder.com/350x250",
+        "name": "HOA Organizers",
+        "image_path": "hoa-organizers.png",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
-            "live_demo": null,
-            "github": "https://github.com/tbone1020/Auto-Complete"
-        },
-        "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code",
-            "BEM"
-        ]
-    },
-    {
-        "name": "Portfolio Website",
-        "image_path": "https://via.placeholder.com/350x250",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
-        "links": {
-            "live_demo": null,
+            "live_demo": "http://hoaorganizers.com/",
             "github": null
         },
         "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SASS",
-            "BEM"
+            "WordPress",
+            "BoostStrap 4",
+            "SCSS"
         ]
     },
     {
-        "name": "Blackjack game",
-        "image_path": "https://via.placeholder.com/350x250",
+        "name": "Cacique Queso Dips",
+        "image_path": "cacique-queso-dip.png",
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
-            "live_demo": "http://tteebken.com/auto-complete",
-            "github": "https://github.com/tbone1020/Auto-Complete"
+            "live_demo": "https://www.caciqueinc.com/queso-dip/",
+            "github": null
         },
         "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
-        ]
-    },
-    {
-        "name": "Teebken Wedding 2019",
-        "image_path": "https://via.placeholder.com/350x250",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
-        "links": {
-            "live_demo": "http://tteebken.com/auto-complete",
-            "github": "https://github.com/tbone1020/Auto-Complete"
-        },
-        "technologies": [
-            "Angular 8"
-        ]
-    },
-    {
-        "name": "FreeCodeCamp",
-        "image_path": "https://via.placeholder.com/350x250",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
-        "links": {
-            "live_demo": "http://tteebken.com/auto-complete",
-            "github": "https://github.com/tbone1020/Auto-Complete"
-        },
-        "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
-        ]
-    },
-    {
-        "name": "CodeFight Algortihms",
-        "image_path": "https://via.placeholder.com/350x250",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
-        "links": {
-            "live_demo": "http://tteebken.com/auto-complete",
-            "github": "https://github.com/tbone1020/Auto-Complete"
-        },
-        "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
-        ]
-    },
-    {
-        "name": "CodeWars Algorithms",
-        "image_path": "https://via.placeholder.com/350x250",
-        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
-        "links": {
-            "live_demo": "http://tteebken.com/auto-complete",
-            "github": "https://github.com/tbone1020/Auto-Complete"
-        },
-        "technologies": [
-            "Angular 8",
-            "TypeScript",
-            "SOLID Principles",
-            "Clean Code"
+            "WordPress",
+            "BoostStrap 4",
+            "SCSS"
         ]
     }
 ]

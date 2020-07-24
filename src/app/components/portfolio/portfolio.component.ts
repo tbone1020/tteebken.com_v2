@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from '../../services/portfolio.service';
 import { PortfolioItem } from '../../shared/models/portfolio-item.model';
 

@@ -25,6 +25,10 @@ describe('HomeComponent', () => {
       expect(ContactComponent).toBeDefined();
     });
     
+    it ('Should have about component', () => {
+      expect(AboutComponent).toBeDefined();
+    });
+    
     it ('Should have hero component', () => {
       expect(HeroComponent).toBeDefined();
     });

@@ -3,7 +3,11 @@
 
 .portfolio-item {
     position: relative;
+    overflow: hidden;
 
+    .portfolio-item__image-wrap {
+        background-color: transparent;
+    }
 
     @include breakpoint('min-xlg') {
         &:after {
@@ -37,7 +41,10 @@
     .portfolio-item__image-wrap {
         
         .portfolio-item__image {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
             width: 100%;
+            border: 5px solid #d9eff5;
         }
     }
     .portfolio-item__project {
