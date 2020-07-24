@@ -8,7 +8,7 @@ import { PortfolioItem } from '../shared/models/portfolio-item.model';
   providedIn: 'root'
 })
 export class PortfolioService implements APortfolio {
-  public BASE_URL: string = "http://localhost:4200/assets/mock-portfolio-items.json";
+  public BASE_URL: string = "http://localhost:4200/assets/portfolio-data.json";
 
   constructor(private http: HttpClient) { }
 
