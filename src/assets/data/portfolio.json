@@ -4,7 +4,7 @@
         "image_path": "destini-translator-app.png",
         "description": "",
         "links": {
-            "live_demo": "http://tteebken.com/translator-app",
+            "live_demo": "http://dev.destinilocators.com/language-translator/",
             "github": "https://github.com/tbone1020/language-translate"
         },
         "technologies": [
@@ -33,7 +33,7 @@
         "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
         "links": {
             "live_demo": "http://hoaorganizers.com/",
-            "github": null
+            "github": "https://github.com/tbone1020/HOAOrgainizers"
         },
         "technologies": [
             "WordPress",
