@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { APortfolio } from './aportfolio';
 import { HttpClient } from '@angular/common/http';
-import { IPortfolio } from './interfaces/iportfolio';
+import { IPortfolio } from '../shared/interfaces/iportfolio';
 import { PortfolioItem } from '../shared/models/portfolio-item.model';
 
 @Injectable({
