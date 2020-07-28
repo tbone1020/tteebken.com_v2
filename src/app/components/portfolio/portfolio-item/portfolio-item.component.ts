@@ -1,5 +1,5 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-
+import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { IPortfolioLinks } from '../../../shared/interfaces/iportfolio-links';
 @Component({
   selector: 'app-portfolio-item',
   templateUrl: './portfolio-item.component.html',
@@ -7,17 +7,17 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
   host: {'class': 'portfolio__project'}
 })
-export class PortfolioItemComponent implements OnInit {
+
+export class PortfolioItemComponent {
 
   @Input() name: string;
   @Input() imagePath: string;
-  @Input() description: string;
-  @Input() links: Object;
+  @Input() links: IPortfolioLinks;
   @Input() technologies: string[];
   
 
-  constructor() { }
-
-  ngOnInit() { }
+  constructor() { 
+    
+  }
 
 }

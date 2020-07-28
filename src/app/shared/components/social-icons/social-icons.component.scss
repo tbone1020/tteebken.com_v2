@@ -1,48 +1,30 @@
 @import '../../../../assets/styles/variables.scss';
 
 .social-icons {
-
-    &.social-icon--light {
-      .social-icons__link {
-        color: white;
-
-        .social-icons__icon:nth-child(1), .social-icons__icon:nth-child(2) {
-          color: $primary;
-        }
-      }
-    }
-
-    &.social-icon--dark {
-      .social-icons__link {
-        color: $dark-gray;
-
-        .social-icons__icon:nth-child(1), .social-icons__icon:nth-child(2) {
-          color: white;
-        }
-      }
-    }
     
     .social-icons__link {
       font-size: 35px;
+      color: $dark;
 
       &:nth-child(2) {
         padding: 0 20px;
       }
 
-      .social-icons__portfolio {
+      .social-icons__portfolio { 
         position: relative;
-        z-index: 1;
 
         .fa-user, .fa-align-left {
           position: absolute;
         }
         .fa-user {
           font-size: 10px;
+          color: white;
           font-weight: bold;
           left: 4px;
           top: 7px;
         }
         .fa-align-left {
+          color: white;
           font-size: 15px;
           font-weight: 500;
           left: 5px;

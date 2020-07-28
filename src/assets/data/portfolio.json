@@ -1,0 +1,58 @@
+[
+    {
+        "name": "JSON Translator App",
+        "image_path": "destini-translator-app.png",
+        "description": "",
+        "links": {
+            "live_demo": "http://dev.destinilocators.com/language-translator/",
+            "github": "https://github.com/tbone1020/language-translate"
+        },
+        "technologies": [
+            "React.js",
+            "TypeScript",
+            "3rd party API"
+        ]
+    },
+    {
+        "name": "Auto Complete",
+        "image_path": "auto-complete.png",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
+        "links": {
+            "live_demo": "http://tteebken.com/auto-complete",
+            "github": "https://github.com/tbone1020/Auto-Complete"
+        },
+        "technologies": [
+            "Angular 8",
+            "TypeScript",
+            "Data Structures"
+        ]
+    },
+    {
+        "name": "HOA Organizers",
+        "image_path": "hoa-organizers.png",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
+        "links": {
+            "live_demo": "http://hoaorganizers.com/",
+            "github": "https://github.com/tbone1020/HOAOrgainizers"
+        },
+        "technologies": [
+            "WordPress",
+            "BoostStrap 4",
+            "SCSS"
+        ]
+    },
+    {
+        "name": "Cacique Queso Dips",
+        "image_path": "cacique-queso-dip.png",
+        "description": "I wanted to experiment with data structures and the one that caught my eye was the Trie data structure. Coupled with the Hash table.",
+        "links": {
+            "live_demo": "https://www.caciqueinc.com/queso-dip/",
+            "github": null
+        },
+        "technologies": [
+            "WordPress",
+            "BoostStrap 4",
+            "SCSS"
+        ]
+    }
+]

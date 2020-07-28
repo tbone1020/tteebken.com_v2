@@ -3,11 +3,15 @@
 
 .portfolio-item {
     position: relative;
+    overflow: hidden;
 
+    .portfolio-item__image-wrap {
+        background-color: transparent;
+    }
 
     @include breakpoint('min-xlg') {
         &:after {
-            background: rgba($dark-gray, 0.8);
+            background: rgba($dark, 0.8);
             content: '';
             opacity: 0;
             position: absolute;
@@ -37,7 +41,10 @@
     .portfolio-item__image-wrap {
         
         .portfolio-item__image {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
             width: 100%;
+            border: 5px solid #d9eff5;
         }
     }
     .portfolio-item__project {
@@ -57,16 +64,22 @@
         
         .portfolio-item__name {
             font-size: 25px;
+            color: $dark;
             padding: 25px 0 15px;
             text-align: center;
-        }
-        .portfolio-item__description {
-            font-size: 14px;
-            line-height: 20px;
+            
+            @include breakpoint('min-xlg') {
+                color: white;
+            }
         }
         .portfolio-item__skills {
             text-align: center;
+            color: $dark;
             font-size: 20px;
+            
+            @include breakpoint('min-lg') {
+                color: white;
+            }
         }
         .portfolio__technologies {
             padding: 10px 5px;

@@ -1,8 +1,9 @@
-<app-navigation></app-navigation>
 <main role="main">
   <app-hero></app-hero>
-  <app-about #about></app-about>
-  <app-portfolio #portfolio></app-portfolio>
-  <app-contact #contact></app-contact>
+  <app-about></app-about>
+  <app-portfolio></app-portfolio>
+  <app-contact></app-contact>
   <app-footer></app-footer>
+  <figure appParallaxScroll [startingPosition]="370" [ratio]="1.5" id="left-background-shape"></figure>
+  <figure appParallaxScroll [startingPosition]="2200" [ratio]="1.5" id="right-background-shape"></figure>
 </main>

@@ -7,31 +7,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class CertificatesComponent implements OnInit {
 
-  public certificateList: Object[] = [{
-      name: " Front end Development",
-      url: "#",
-      image_path: "https://via.placeholder.com/250",
-      image_alt: "image of certificate",
-      description: "Certificate in responsive web design from FreeCodeCamp.org",
-    }, {
-      name: " Front end Development",
-      url: "#",
-      image_path: "https://via.placeholder.com/250",
-      image_alt: "image of certificate",
-      description: "Certificate in responsive web design from FreeCodeCamp.org",
-    }, {
-      name: " Front end Development",
-      url: "#",
-      image_path: "https://via.placeholder.com/250",
-      image_alt: "image of certificate",
-      description: "Certificate in responsive web design from FreeCodeCamp.org",
-    }, {
-      name: " Front end Development",
-      url: "#",
-      image_path: "https://via.placeholder.com/250",
-      image_alt: "image of certificate",
-      description: "Certificate in responsive web design from FreeCodeCamp.org",
-    }];
+  public certificateList: Object[] = [];
 
   constructor() { }
 

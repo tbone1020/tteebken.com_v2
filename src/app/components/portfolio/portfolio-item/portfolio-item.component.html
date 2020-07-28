@@ -1,19 +1,28 @@
 <figure class="portfolio-item">
     <div class="portfolio-item__image-wrap">
-        <img src="{{imagePath}}" alt="portfolio item image" class="portfolio-item__image">
+        <img src="../../../../assets/images/{{imagePath}}" alt="{{name}} image" class="portfolio-item__image">
     </div>
     <figcaption class="portfolio-item__project">
         <h3 class="portfolio-item__name">{{name}}</h3>
-        <!-- <p class="portfolio-item__description">{{description}}</p> -->
         <h4 class="portfolio-item__skills">Tech used:</h4>
         <div class="portfolio__technologies" [innerHTML]="technologies | techItem"> 
         </div>
         <div class="portfolio__project-links">
-            <a href="{{links.github}}" target="_blank" class="portfolio__link">
-                <i class="fab fa-github"></i>
+            <a 
+                *ngIf="links.github !== null && links.github !== undefined" 
+                href="{{links.github}}" 
+                target="_blank"
+                rel="noopener" 
+                class="portfolio__link">
+                    <i class="fab fa-github"></i>
             </a>
-            <a href="{{links.live_demo}}" target="_blank" class="portfolio__link">
-                <i class="far fa-external-link-alt"></i>
+            <a 
+                *ngIf="links.live_demo !== null && links.live_demo !== undefined" 
+                href="{{links.live_demo}}" 
+                target="_blank" 
+                rel="noopener" 
+                class="portfolio__link">
+                    <i class="far fa-external-link-alt"></i>
             </a>
         </div>
     </figcaption>

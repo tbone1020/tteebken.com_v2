@@ -1,0 +1,24 @@
+@import '../../assets/styles/mixins.scss';
+
+#left-background-shape {
+    background-image: url('../../assets/images/right-squared.svg');
+    top: 370px;
+}
+
+#right-background-shape {
+    background-image: url('../../assets/images/left-squared.svg');
+    top: 2200px;
+}
+#right-background-shape, #left-background-shape {
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    height: 720px;
+    width: 100%;
+    z-index: -1;
+    
+    @media (min-width: 1200px) {
+        height: 1200px;
+    }
+}

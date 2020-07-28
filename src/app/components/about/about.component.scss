@@ -2,35 +2,38 @@
 @import '../../../assets/styles/variables.scss';
 
 #about {
-    background: white;
     color: $dark-gray;
-    padding: 100px 0 140px;
+    padding: 0 0 140px;
     
     .about__description {
-
-        .about__paragraph-wrapper {
-            padding-top: 50px;
+        .about__image-wrapper {
+            width: 290px;
+            margin: auto;
             
-            @include breakpoint('min-lg') {
-                display: flex;
-                justify-content: flex-end;
+            @include breakpoint('min-md') {
+                width: 300px;
             }
 
-            .about__paragraph {
-                font-size: 20px;
-                line-height: 30px;  
-                text-align: center;
-                
-                @include breakpoint('min-lg') {
-                    flex-basis: 50%;
-                    text-align: left;
-                }   
-
-                strong {
-                    font-weight: bold;
-                }
-                
+            .about__image {
+                width: 100%;;
             }
+        }
+
+        .about__header {
+            padding: 100px 0 50px;
+        }
+
+        .about__paragraph {
+            font-size: 20px;
+            line-height: 30px;  
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+
+            strong {
+                font-weight: bold;
+            }
+            
         }
     }
 }
